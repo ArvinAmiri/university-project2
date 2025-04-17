@@ -1,32 +1,19 @@
 #include <iostream>
-#include <string>
-
 using namespace std;
-
-class Person {
-private:
-    string name;
-
-public:
-    int age;
-    void setName(string n) { name = n; }
-    string getName() { return name; }
-};
-
-int main() {
-    Person people[5];
-    int totalAge = 0;
-    string inputName;
-
-    for (int i = 0; i < 5; ++i) {
-        cin >> inputName >> people[i].age;
-        people[i].setName(inputName);
-        totalAge += people[i].age;
+    class peaple
+    {
+        private:
+         double mohasebeage {
+             int tedad;
+             int names [tedad]={arvin,ali,majid}
+             int age[tedad]={18,19,20}
+             int totalage;
+             for(int i=0,i<tedad,i++){
+                 totalage +=age[i];
+             }
+         }
+        
+ }
+    public:
+    double avg=mohasebeage();
     }
-
-    double averageAge = totalAge / 5.0;
-    cout << "Average age is: " << averageAge << endl;
-
-    return 0;
-}
-
